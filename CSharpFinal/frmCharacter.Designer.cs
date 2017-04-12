@@ -47,11 +47,16 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.grpEdit = new System.Windows.Forms.GroupBox();
-            this.chkEdit = new System.Windows.Forms.CheckBox();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.btnNew = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.chkEdit = new System.Windows.Forms.CheckBox();
             this.lstItems = new System.Windows.Forms.ListBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
             this.grpEdit.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,7 +81,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 67);
+            this.label3.Location = new System.Drawing.Point(11, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 2;
@@ -85,7 +90,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 87);
+            this.label4.Location = new System.Drawing.Point(16, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(25, 13);
             this.label4.TabIndex = 3;
@@ -94,7 +99,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 107);
+            this.label5.Location = new System.Drawing.Point(13, 107);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 13);
             this.label5.TabIndex = 4;
@@ -154,7 +159,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(188, 27);
+            this.label7.Location = new System.Drawing.Point(187, 27);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(33, 13);
             this.label7.TabIndex = 12;
@@ -187,7 +192,7 @@
             // 
             this.textBox9.Location = new System.Drawing.Point(47, 204);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.Size = new System.Drawing.Size(327, 20);
             this.textBox9.TabIndex = 16;
             // 
             // label9
@@ -211,24 +216,14 @@
             this.grpEdit.TabIndex = 18;
             this.grpEdit.TabStop = false;
             // 
-            // chkEdit
+            // btnDelete
             // 
-            this.chkEdit.AutoSize = true;
-            this.chkEdit.Location = new System.Drawing.Point(380, 150);
-            this.chkEdit.Name = "chkEdit";
-            this.chkEdit.Size = new System.Drawing.Size(159, 17);
-            this.chkEdit.TabIndex = 0;
-            this.chkEdit.Text = "Enable Character Edit Mode";
-            this.chkEdit.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(6, 16);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 23);
-            this.btnEdit.TabIndex = 0;
-            this.btnEdit.Text = "Modify";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnDelete.Location = new System.Drawing.Point(168, 16);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Remove";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnNew
             // 
@@ -239,14 +234,24 @@
             this.btnNew.Text = "Create New";
             this.btnNew.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // btnEdit
             // 
-            this.btnDelete.Location = new System.Drawing.Point(168, 16);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 2;
-            this.btnDelete.Text = "Remove";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnEdit.Location = new System.Drawing.Point(6, 16);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 23);
+            this.btnEdit.TabIndex = 0;
+            this.btnEdit.Text = "Modify";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // chkEdit
+            // 
+            this.chkEdit.AutoSize = true;
+            this.chkEdit.Location = new System.Drawing.Point(380, 150);
+            this.chkEdit.Name = "chkEdit";
+            this.chkEdit.Size = new System.Drawing.Size(159, 17);
+            this.chkEdit.TabIndex = 0;
+            this.chkEdit.Text = "Enable Character Edit Mode";
+            this.chkEdit.UseVisualStyleBackColor = true;
             // 
             // lstItems
             // 
@@ -256,11 +261,56 @@
             this.lstItems.Size = new System.Drawing.Size(252, 121);
             this.lstItems.TabIndex = 19;
             // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(226, 124);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.TabIndex = 20;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(186, 127);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(34, 13);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Armor";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(198, 107);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(22, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "HP";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(226, 104);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 20);
+            this.textBox11.TabIndex = 23;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(13, 237);
+            this.textBox12.Multiline = true;
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(619, 147);
+            this.textBox12.TabIndex = 24;
+            // 
             // frmCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 396);
+            this.Controls.Add(this.textBox12);
+            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.textBox10);
             this.Controls.Add(this.lstItems);
             this.Controls.Add(this.chkEdit);
             this.Controls.Add(this.grpEdit);
@@ -316,5 +366,10 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.CheckBox chkEdit;
         private System.Windows.Forms.ListBox lstItems;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox12;
     }
 }

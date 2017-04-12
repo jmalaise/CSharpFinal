@@ -36,11 +36,11 @@
             this.resetToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.grpSearch = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radCharacter = new System.Windows.Forms.RadioButton();
-            this.radItem = new System.Windows.Forms.RadioButton();
-            this.btnSearchLike = new System.Windows.Forms.Button();
             this.btnSearchExact = new System.Windows.Forms.Button();
+            this.btnSearchLike = new System.Windows.Forms.Button();
+            this.radItem = new System.Windows.Forms.RadioButton();
+            this.radCharacter = new System.Windows.Forms.RadioButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grpSearch.SuspendLayout();
@@ -70,7 +70,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // characterToolStripMenuItem
@@ -113,23 +113,23 @@
             this.grpSearch.TabStop = false;
             this.grpSearch.Text = "Quick Search";
             // 
-            // textBox1
+            // btnSearchExact
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.btnSearchExact.Location = new System.Drawing.Point(385, 19);
+            this.btnSearchExact.Name = "btnSearchExact";
+            this.btnSearchExact.Size = new System.Drawing.Size(92, 40);
+            this.btnSearchExact.TabIndex = 4;
+            this.btnSearchExact.Text = "Search Exact";
+            this.btnSearchExact.UseVisualStyleBackColor = true;
             // 
-            // radCharacter
+            // btnSearchLike
             // 
-            this.radCharacter.AutoSize = true;
-            this.radCharacter.Location = new System.Drawing.Point(169, 19);
-            this.radCharacter.Name = "radCharacter";
-            this.radCharacter.Size = new System.Drawing.Size(71, 17);
-            this.radCharacter.TabIndex = 1;
-            this.radCharacter.TabStop = true;
-            this.radCharacter.Text = "Character";
-            this.radCharacter.UseVisualStyleBackColor = true;
+            this.btnSearchLike.Location = new System.Drawing.Point(278, 20);
+            this.btnSearchLike.Name = "btnSearchLike";
+            this.btnSearchLike.Size = new System.Drawing.Size(101, 40);
+            this.btnSearchLike.TabIndex = 3;
+            this.btnSearchLike.Text = "Search";
+            this.btnSearchLike.UseVisualStyleBackColor = true;
             // 
             // radItem
             // 
@@ -142,23 +142,23 @@
             this.radItem.Text = "Item";
             this.radItem.UseVisualStyleBackColor = true;
             // 
-            // btnSearchLike
+            // radCharacter
             // 
-            this.btnSearchLike.Location = new System.Drawing.Point(278, 20);
-            this.btnSearchLike.Name = "btnSearchLike";
-            this.btnSearchLike.Size = new System.Drawing.Size(101, 40);
-            this.btnSearchLike.TabIndex = 3;
-            this.btnSearchLike.Text = "Search";
-            this.btnSearchLike.UseVisualStyleBackColor = true;
+            this.radCharacter.AutoSize = true;
+            this.radCharacter.Location = new System.Drawing.Point(169, 19);
+            this.radCharacter.Name = "radCharacter";
+            this.radCharacter.Size = new System.Drawing.Size(71, 17);
+            this.radCharacter.TabIndex = 1;
+            this.radCharacter.TabStop = true;
+            this.radCharacter.Text = "Character";
+            this.radCharacter.UseVisualStyleBackColor = true;
             // 
-            // btnSearchExact
+            // textBox1
             // 
-            this.btnSearchExact.Location = new System.Drawing.Point(385, 19);
-            this.btnSearchExact.Name = "btnSearchExact";
-            this.btnSearchExact.Size = new System.Drawing.Size(92, 40);
-            this.btnSearchExact.TabIndex = 4;
-            this.btnSearchExact.Text = "Search Exact";
-            this.btnSearchExact.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(6, 29);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 0;
             // 
             // frmMain
             // 
@@ -170,7 +170,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
-            this.Text = "Form1";
+            this.Text = "Overview";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
