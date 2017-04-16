@@ -16,5 +16,10 @@ namespace CSharpFinal
         {
             InitializeComponent();
         }
+
+        private void chkEdit_CheckedChanged(object sender, EventArgs e)
+        {
+            grpEdit.Enabled = chkEdit.Checked;
+        }
     }
 }

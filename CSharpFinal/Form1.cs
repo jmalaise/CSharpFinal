@@ -16,5 +16,22 @@ namespace CSharpFinal
         {
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {//exit menu item
+            this.Close();
+        }
+
+        private void characterFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {//character form menu item
+            frmCharacter frm = new frmCharacter();
+            frm.ShowDialog();
+        }
+
+        private void itemFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {//item form menu item
+            frmItem frm = new frmItem();
+            frm.ShowDialog();
+        }
     }
 }

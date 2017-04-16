@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.pnlModify = new System.Windows.Forms.Panel();
-            this.chkEdit = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtQuantity = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.chkEdit = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbxOwner = new System.Windows.Forms.ComboBox();
             this.lblItem = new System.Windows.Forms.Label();
             this.cbxItem = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.txtQuantity = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.pnlModify.SuspendLayout();
             this.SuspendLayout();
@@ -61,15 +61,46 @@
             this.pnlModify.TabIndex = 0;
             this.pnlModify.Visible = false;
             // 
-            // chkEdit
+            // label3
             // 
-            this.chkEdit.AutoSize = true;
-            this.chkEdit.Location = new System.Drawing.Point(13, 331);
-            this.chkEdit.Name = "chkEdit";
-            this.chkEdit.Size = new System.Drawing.Size(111, 17);
-            this.chkEdit.TabIndex = 1;
-            this.chkEdit.Text = "Add/Modify Mode";
-            this.chkEdit.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(157, 48);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Name:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(143, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Quantity:";
+            // 
+            // txtQuantity
+            // 
+            this.txtQuantity.Location = new System.Drawing.Point(198, 5);
+            this.txtQuantity.Name = "txtQuantity";
+            this.txtQuantity.Size = new System.Drawing.Size(56, 20);
+            this.txtQuantity.TabIndex = 6;
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(94, 64);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(160, 20);
+            this.txtName.TabIndex = 5;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(13, 32);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 4;
+            this.btnDelete.Text = "Delete Item";
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnAdd
             // 
@@ -89,14 +120,16 @@
             this.btnEdit.Text = "Commit Edits";
             this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // chkEdit
             // 
-            this.btnDelete.Location = new System.Drawing.Point(13, 32);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 4;
-            this.btnDelete.Text = "Delete Item";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.chkEdit.AutoSize = true;
+            this.chkEdit.Location = new System.Drawing.Point(13, 331);
+            this.chkEdit.Name = "chkEdit";
+            this.chkEdit.Size = new System.Drawing.Size(111, 17);
+            this.chkEdit.TabIndex = 1;
+            this.chkEdit.Text = "Add/Modify Mode";
+            this.chkEdit.UseVisualStyleBackColor = true;
+            this.chkEdit.CheckedChanged += new System.EventHandler(this.chkEdit_CheckedChanged);
             // 
             // label1
             // 
@@ -139,38 +172,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(257, 265);
             this.textBox1.TabIndex = 8;
-            // 
-            // txtName
-            // 
-            this.txtName.Location = new System.Drawing.Point(94, 64);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(160, 20);
-            this.txtName.TabIndex = 5;
-            // 
-            // txtQuantity
-            // 
-            this.txtQuantity.Location = new System.Drawing.Point(198, 5);
-            this.txtQuantity.Name = "txtQuantity";
-            this.txtQuantity.Size = new System.Drawing.Size(56, 20);
-            this.txtQuantity.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(143, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Quantity:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(157, 48);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Name:";
             // 
             // btnExit
             // 

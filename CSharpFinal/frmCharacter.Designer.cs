@@ -252,6 +252,7 @@
             this.chkEdit.TabIndex = 0;
             this.chkEdit.Text = "Enable Character Edit Mode";
             this.chkEdit.UseVisualStyleBackColor = true;
+            this.chkEdit.CheckedChanged += new System.EventHandler(this.chkEdit_CheckedChanged);
             // 
             // lstItems
             // 

@@ -41,6 +41,9 @@
             this.radItem = new System.Windows.Forms.RadioButton();
             this.radCharacter = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.characterFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.itemFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.grpSearch.SuspendLayout();
@@ -70,23 +73,30 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // characterToolStripMenuItem
             // 
+            this.characterToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.characterFormToolStripMenuItem});
             this.characterToolStripMenuItem.Name = "characterToolStripMenuItem";
             this.characterToolStripMenuItem.Size = new System.Drawing.Size(67, 20);
             this.characterToolStripMenuItem.Text = "&Character";
             // 
             // itemsToolStripMenuItem
             // 
+            this.itemsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.itemFormToolStripMenuItem});
             this.itemsToolStripMenuItem.Name = "itemsToolStripMenuItem";
             this.itemsToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.itemsToolStripMenuItem.Text = "&Items";
             // 
             // resetToolStripMenuItem1
             // 
+            this.resetToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearFormToolStripMenuItem});
             this.resetToolStripMenuItem1.Name = "resetToolStripMenuItem1";
             this.resetToolStripMenuItem1.Size = new System.Drawing.Size(47, 20);
             this.resetToolStripMenuItem1.Text = "&Reset";
@@ -160,6 +170,26 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
+            // characterFormToolStripMenuItem
+            // 
+            this.characterFormToolStripMenuItem.Name = "characterFormToolStripMenuItem";
+            this.characterFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.characterFormToolStripMenuItem.Text = "Character Form";
+            this.characterFormToolStripMenuItem.Click += new System.EventHandler(this.characterFormToolStripMenuItem_Click);
+            // 
+            // itemFormToolStripMenuItem
+            // 
+            this.itemFormToolStripMenuItem.Name = "itemFormToolStripMenuItem";
+            this.itemFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.itemFormToolStripMenuItem.Text = "Item Form";
+            this.itemFormToolStripMenuItem.Click += new System.EventHandler(this.itemFormToolStripMenuItem_Click);
+            // 
+            // clearFormToolStripMenuItem
+            // 
+            this.clearFormToolStripMenuItem.Name = "clearFormToolStripMenuItem";
+            this.clearFormToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clearFormToolStripMenuItem.Text = "Clear Form";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,6 +225,9 @@
         private System.Windows.Forms.RadioButton radItem;
         private System.Windows.Forms.RadioButton radCharacter;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripMenuItem characterFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem itemFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem clearFormToolStripMenuItem;
     }
 }
 

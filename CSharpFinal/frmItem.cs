@@ -16,5 +16,11 @@ namespace CSharpFinal
         {
             InitializeComponent();
         }
+
+        private void chkEdit_CheckedChanged(object sender, EventArgs e)
+        {//edit checkbox
+            pnlModify.Visible = chkEdit.Checked;
+
+        }
     }
 }
