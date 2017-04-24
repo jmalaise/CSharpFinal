@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.resetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,9 +45,11 @@
             this.radItem = new System.Windows.Forms.RadioButton();
             this.radCharacter = new System.Windows.Forms.RadioButton();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.grpSearch.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -154,6 +157,7 @@
             this.btnSearchExact.TabIndex = 4;
             this.btnSearchExact.Text = "Search Exact";
             this.btnSearchExact.UseVisualStyleBackColor = true;
+            this.btnSearchExact.Click += new System.EventHandler(this.btnSearchExact_Click);
             // 
             // btnSearchLike
             // 
@@ -163,6 +167,7 @@
             this.btnSearchLike.TabIndex = 3;
             this.btnSearchLike.Text = "Search";
             this.btnSearchLike.UseVisualStyleBackColor = true;
+            this.btnSearchLike.Click += new System.EventHandler(this.btnSearchLike_Click);
             // 
             // radItem
             // 
@@ -195,6 +200,10 @@
             this.txtSearch.Size = new System.Drawing.Size(100, 20);
             this.txtSearch.TabIndex = 0;
             // 
+            // errProvider
+            // 
+            this.errProvider.ContainerControl = this;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -212,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
             this.grpSearch.ResumeLayout(false);
             this.grpSearch.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,6 +244,7 @@
         private System.Windows.Forms.ToolStripMenuItem characterFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem itemFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem clearFormToolStripMenuItem;
+        private System.Windows.Forms.ErrorProvider errProvider;
     }
 }
 
