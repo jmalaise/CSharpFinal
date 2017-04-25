@@ -41,7 +41,7 @@
             this.cbxOwner = new System.Windows.Forms.ComboBox();
             this.lblItem = new System.Windows.Forms.Label();
             this.cbxItem = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.pnlModify.SuspendLayout();
             this.SuspendLayout();
@@ -147,6 +147,7 @@
             this.cbxOwner.Name = "cbxOwner";
             this.cbxOwner.Size = new System.Drawing.Size(210, 21);
             this.cbxOwner.TabIndex = 5;
+            this.cbxOwner.SelectedIndexChanged += new System.EventHandler(this.cbxOwner_SelectedIndexChanged);
             // 
             // lblItem
             // 
@@ -164,14 +165,15 @@
             this.cbxItem.Name = "cbxItem";
             this.cbxItem.Size = new System.Drawing.Size(210, 21);
             this.cbxItem.TabIndex = 7;
+            this.cbxItem.SelectedIndexChanged += new System.EventHandler(this.cbxItem_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtDescription
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 60);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(257, 265);
-            this.textBox1.TabIndex = 8;
+            this.txtDescription.Location = new System.Drawing.Point(12, 60);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(257, 265);
+            this.txtDescription.TabIndex = 8;
             // 
             // btnExit
             // 
@@ -188,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(283, 466);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.cbxItem);
             this.Controls.Add(this.lblItem);
             this.Controls.Add(this.cbxOwner);
@@ -199,6 +201,7 @@
             this.MaximizeBox = false;
             this.Name = "frmItem";
             this.Text = "Items";
+            this.Load += new System.EventHandler(this.frmItem_Load);
             this.pnlModify.ResumeLayout(false);
             this.pnlModify.PerformLayout();
             this.ResumeLayout(false);
@@ -221,7 +224,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtQuantity;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Button btnExit;
     }
 }
