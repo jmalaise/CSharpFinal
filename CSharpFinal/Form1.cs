@@ -168,5 +168,12 @@ namespace CSharpFinal
 
 
         }
+
+        private void clearFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            errProvider.Clear();
+            txtSearch.Text = "";
+            radCharacter.Select();
+        }
     }
 }

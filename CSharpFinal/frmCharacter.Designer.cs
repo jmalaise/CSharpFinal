@@ -34,17 +34,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtSTR = new System.Windows.Forms.TextBox();
+            this.txtDEX = new System.Windows.Forms.TextBox();
+            this.txtCON = new System.Windows.Forms.TextBox();
+            this.txtINT = new System.Windows.Forms.TextBox();
+            this.txtWIS = new System.Windows.Forms.TextBox();
+            this.txtCHA = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtRace = new System.Windows.Forms.TextBox();
+            this.txtClass = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.grpEdit = new System.Windows.Forms.GroupBox();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -52,11 +52,11 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.chkEdit = new System.Windows.Forms.CheckBox();
             this.lstItems = new System.Windows.Forms.ListBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtAC = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtHP = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
             this.grpEdit.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,47 +114,47 @@
             this.label6.TabIndex = 5;
             this.label6.Text = "CHA";
             // 
-            // textBox1
+            // txtSTR
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtSTR.Location = new System.Drawing.Point(47, 24);
+            this.txtSTR.Name = "txtSTR";
+            this.txtSTR.Size = new System.Drawing.Size(100, 20);
+            this.txtSTR.TabIndex = 6;
             // 
-            // textBox2
+            // txtDEX
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtDEX.Location = new System.Drawing.Point(47, 44);
+            this.txtDEX.Name = "txtDEX";
+            this.txtDEX.Size = new System.Drawing.Size(100, 20);
+            this.txtDEX.TabIndex = 7;
             // 
-            // textBox3
+            // txtCON
             // 
-            this.textBox3.Location = new System.Drawing.Point(47, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 8;
+            this.txtCON.Location = new System.Drawing.Point(47, 64);
+            this.txtCON.Name = "txtCON";
+            this.txtCON.Size = new System.Drawing.Size(100, 20);
+            this.txtCON.TabIndex = 8;
             // 
-            // textBox4
+            // txtINT
             // 
-            this.textBox4.Location = new System.Drawing.Point(47, 84);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 9;
+            this.txtINT.Location = new System.Drawing.Point(47, 84);
+            this.txtINT.Name = "txtINT";
+            this.txtINT.Size = new System.Drawing.Size(100, 20);
+            this.txtINT.TabIndex = 9;
             // 
-            // textBox5
+            // txtWIS
             // 
-            this.textBox5.Location = new System.Drawing.Point(47, 104);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtWIS.Location = new System.Drawing.Point(47, 104);
+            this.txtWIS.Name = "txtWIS";
+            this.txtWIS.Size = new System.Drawing.Size(100, 20);
+            this.txtWIS.TabIndex = 10;
             // 
-            // textBox6
+            // txtCHA
             // 
-            this.textBox6.Location = new System.Drawing.Point(47, 124);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 11;
+            this.txtCHA.Location = new System.Drawing.Point(47, 124);
+            this.txtCHA.Name = "txtCHA";
+            this.txtCHA.Size = new System.Drawing.Size(100, 20);
+            this.txtCHA.TabIndex = 11;
             // 
             // label7
             // 
@@ -174,26 +174,26 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Class";
             // 
-            // textBox7
+            // txtRace
             // 
-            this.textBox7.Location = new System.Drawing.Point(226, 24);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 14;
+            this.txtRace.Location = new System.Drawing.Point(226, 24);
+            this.txtRace.Name = "txtRace";
+            this.txtRace.Size = new System.Drawing.Size(100, 20);
+            this.txtRace.TabIndex = 14;
             // 
-            // textBox8
+            // txtClass
             // 
-            this.textBox8.Location = new System.Drawing.Point(226, 44);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 15;
+            this.txtClass.Location = new System.Drawing.Point(226, 44);
+            this.txtClass.Name = "txtClass";
+            this.txtClass.Size = new System.Drawing.Size(100, 20);
+            this.txtClass.TabIndex = 15;
             // 
-            // textBox9
+            // txtName
             // 
-            this.textBox9.Location = new System.Drawing.Point(47, 204);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(327, 20);
-            this.textBox9.TabIndex = 16;
+            this.txtName.Location = new System.Drawing.Point(47, 204);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(327, 20);
+            this.txtName.TabIndex = 16;
             // 
             // label9
             // 
@@ -261,13 +261,14 @@
             this.lstItems.Name = "lstItems";
             this.lstItems.Size = new System.Drawing.Size(252, 121);
             this.lstItems.TabIndex = 19;
+            this.lstItems.SelectedIndexChanged += new System.EventHandler(this.lstItems_SelectedIndexChanged);
             // 
-            // textBox10
+            // txtAC
             // 
-            this.textBox10.Location = new System.Drawing.Point(226, 124);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 20;
+            this.txtAC.Location = new System.Drawing.Point(226, 124);
+            this.txtAC.Name = "txtAC";
+            this.txtAC.Size = new System.Drawing.Size(100, 20);
+            this.txtAC.TabIndex = 20;
             // 
             // label10
             // 
@@ -287,46 +288,46 @@
             this.label11.TabIndex = 22;
             this.label11.Text = "HP";
             // 
-            // textBox11
+            // txtHP
             // 
-            this.textBox11.Location = new System.Drawing.Point(226, 104);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 23;
+            this.txtHP.Location = new System.Drawing.Point(226, 104);
+            this.txtHP.Name = "txtHP";
+            this.txtHP.Size = new System.Drawing.Size(100, 20);
+            this.txtHP.TabIndex = 23;
             // 
-            // textBox12
+            // txtDescription
             // 
-            this.textBox12.Location = new System.Drawing.Point(13, 237);
-            this.textBox12.Multiline = true;
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(619, 147);
-            this.textBox12.TabIndex = 24;
+            this.txtDescription.Location = new System.Drawing.Point(13, 237);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(619, 147);
+            this.txtDescription.TabIndex = 24;
             // 
             // frmCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(644, 396);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtHP);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.txtAC);
             this.Controls.Add(this.lstItems);
             this.Controls.Add(this.chkEdit);
             this.Controls.Add(this.grpEdit);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtClass);
+            this.Controls.Add(this.txtRace);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCHA);
+            this.Controls.Add(this.txtWIS);
+            this.Controls.Add(this.txtINT);
+            this.Controls.Add(this.txtCON);
+            this.Controls.Add(this.txtDEX);
+            this.Controls.Add(this.txtSTR);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -335,6 +336,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmCharacter";
             this.Text = "Character";
+            this.Load += new System.EventHandler(this.frmCharacter_Load);
             this.grpEdit.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -349,17 +351,17 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtSTR;
+        private System.Windows.Forms.TextBox txtDEX;
+        private System.Windows.Forms.TextBox txtCON;
+        private System.Windows.Forms.TextBox txtINT;
+        private System.Windows.Forms.TextBox txtWIS;
+        private System.Windows.Forms.TextBox txtCHA;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtRace;
+        private System.Windows.Forms.TextBox txtClass;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox grpEdit;
         private System.Windows.Forms.Button btnDelete;
@@ -367,10 +369,10 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.CheckBox chkEdit;
         private System.Windows.Forms.ListBox lstItems;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtAC;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtHP;
+        private System.Windows.Forms.TextBox txtDescription;
     }
 }
