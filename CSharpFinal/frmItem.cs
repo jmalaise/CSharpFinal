@@ -115,5 +115,113 @@ namespace CSharpFinal
             txtDescription.Text = "Item: " + selectedName + nl+nl + quantity + outTable.Rows[0]["Description"].ToString();
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {// ADD button
+
+            int qty = ValidateInput();
+
+            if (qty < 1)
+            {
+                return;
+            }
+
+            String selectedName = cbxOwner.SelectedItem.ToString();
+
+            String SQLadd = "INSERT INTO Items(Name, Quantity, Owner, Description) VALUES (@Name, @Quantity, @Owner, @Description)";
+
+            connection.Open();
+
+            command = new SQLiteCommand(SQLadd, connection);
+            command.Parameters.AddWithValue("@Name", txtName.Text);
+            command.Parameters.AddWithValue("@Quantity", qty);
+            command.Parameters.AddWithValue("@Owner", selectedName);
+            command.Parameters.AddWithValue("@Description", txtDescription.Text);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        /**
+         * Validates Item form inputs.
+         * returns -1 if any invalid input
+         * otherwise returns quantity value as int.
+         */
+        private int ValidateInput()
+        {
+            if (txtName.Text == "")
+            {
+                errProvider.SetError(txtName, "Cannot be empty.");
+                return -1;
+            }
+
+            if (txtQuantity.Text == "")
+            {
+                errProvider.SetError(txtQuantity, "Cannot be empty.");
+                return -1;
+            }
+
+            if (txtDescription.Text == "")
+            {
+                errProvider.SetError(txtDescription, "Cannot be empty.");
+                return -1;
+            }
+
+            int qty;
+
+            if (!(Int32.TryParse(txtQuantity.Text, out qty)))
+            {
+                errProvider.SetError(txtQuantity, "Invalid entry.");
+                return -1;
+            }
+            else if (qty < 1)
+            {
+                errProvider.SetError(txtQuantity, "Cannot be Zero or Negitive.");
+                return -1;
+            }
+
+            return qty;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {//DELETE button
+
+            String owner = "'" + cbxOwner.SelectedItem.ToString() + "'";
+            String target = "'" + cbxItem.SelectedItem.ToString() + "'";
+            String SQLdel = "DELETE FROM Items WHERE Owner = " + owner + " AND Name = " + target;
+
+
+            connection.Open();
+            command = new SQLiteCommand(SQLdel, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {//EDIT button
+
+            int qty = ValidateInput();
+
+            if (qty > 1)
+            {
+                return;
+            }
+
+            String owner = "'" + cbxOwner.SelectedItem.ToString() + "'";
+            String target = "'" + cbxItem.SelectedItem.ToString() + "'";
+            String SQLedit = 
+                "UPDATE Items SET (Name, Quantity, Owner, Description) " +
+                "VALUES (@Name, @Quantity, @Owner, @Description) " +
+                "WHERE Owner ="+owner+" AND Name = "+target;
+
+            connection.Open();
+            command = new SQLiteCommand(SQLedit, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

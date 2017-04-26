@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,7 +58,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtHP = new System.Windows.Forms.TextBox();
             this.txtDescription = new System.Windows.Forms.TextBox();
+            this.errProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.grpEdit.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -233,6 +236,7 @@
             this.btnNew.TabIndex = 1;
             this.btnNew.Text = "Create New";
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnEdit
             // 
@@ -303,6 +307,10 @@
             this.txtDescription.Size = new System.Drawing.Size(619, 147);
             this.txtDescription.TabIndex = 24;
             // 
+            // errProvider
+            // 
+            this.errProvider.ContainerControl = this;
+            // 
             // frmCharacter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -338,6 +346,7 @@
             this.Text = "Character";
             this.Load += new System.EventHandler(this.frmCharacter_Load);
             this.grpEdit.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,5 +383,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtHP;
         private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.ErrorProvider errProvider;
     }
 }
