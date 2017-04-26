@@ -227,6 +227,7 @@
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Remove";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnNew
             // 
@@ -246,6 +247,7 @@
             this.btnEdit.TabIndex = 0;
             this.btnEdit.Text = "Modify";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // chkEdit
             // 

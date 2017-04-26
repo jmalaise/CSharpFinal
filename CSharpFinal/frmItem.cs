@@ -215,6 +215,10 @@ namespace CSharpFinal
 
             connection.Open();
             command = new SQLiteCommand(SQLedit, connection);
+            command.Parameters.AddWithValue("@Name", cbxItem.SelectedItem.ToString());
+            command.Parameters.AddWithValue("@Quantity", Convert.ToInt32(txtQuantity.Text));
+            command.Parameters.AddWithValue("@Owner", cbxOwner.SelectedItem.ToString());
+            command.Parameters.AddWithValue("@Description",txtDescription.Text);
             command.ExecuteNonQuery();
             connection.Close();
         }

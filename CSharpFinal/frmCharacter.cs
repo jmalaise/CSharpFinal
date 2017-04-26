@@ -256,5 +256,49 @@ namespace CSharpFinal
             return true;
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {//DELETE button
+
+            String target = "'" + lstItems.SelectedItem.ToString() + "'";
+            String desc = "'"+txtDescription.Text+"'";
+            String SQLremove = "DELETE FROM Character WHERE Name = " + target+ " AND Description = "+desc;
+
+            connection.Open();
+            command = new SQLiteCommand(SQLremove, connection);
+            command.ExecuteNonQuery();
+            connection.Close();
+
+            FreshLoad();
+
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            String target = "'" + lstItems.SelectedItem.ToString() + "'";
+            String SQLedit =
+                "UPDATE Character SET (Name, Strength, Dexterity, Constitution, Wisdom, Charisma, Race, Class, HP, Armor, Description) " +
+                "VALUES ((@Name, @Strength, @Dexterity, @Constitution, @Wisdom, @Charisma, @Race, @Class, @HP, @Armor, @Description) " +
+                "WHERE Name = " + target;
+
+            connection.Open();
+
+            command = new SQLiteCommand(SQLedit, connection);
+            command.Parameters.AddWithValue("@Name", lstItems.SelectedItem.ToString());
+            command.Parameters.AddWithValue("@Strength", Convert.ToInt32(txtSTR.Text));
+            command.Parameters.AddWithValue("@Dexterity", Convert.ToInt32(txtDEX.Text));
+            command.Parameters.AddWithValue("@Constitution", Convert.ToInt32(txtCON.Text));
+            command.Parameters.AddWithValue("@Wisdom", Convert.ToInt32(txtWIS.Text));
+            command.Parameters.AddWithValue("@Charisma", Convert.ToInt32(txtCHA.Text));
+            command.Parameters.AddWithValue("@Race", txtRace.Text);
+            command.Parameters.AddWithValue("@Class", txtClass.Text);
+            command.Parameters.AddWithValue("@HP", Convert.ToInt32(txtHP.Text));
+            command.Parameters.AddWithValue("@Armor", Convert.ToInt32(txtAC.Text));
+            command.Parameters.AddWithValue("@Description", txtDescription.Text);
+
+            connection.Close();
+
+            FreshLoad();
+
+        }
     }
 }
